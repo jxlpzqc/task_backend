@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @SpringBootApplication
 @RestController
-@ComponentScan(basePackages = {"hour.*"})
 public class DemoApplication {
 
 	public static void main(String[] args) {

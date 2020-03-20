@@ -207,7 +207,7 @@
 
 ## /task/getSendTasks
 
-##### 获取我发布的任务的列表 task元素的status字段0代表此发布未支付，1代表此发布等待admin审核，2代表发布被admin驳回，3代表发布成功
+##### 获取我发布的任务的列表 task元素的status字段0代表此发布未支付，1代表此发布等待admin审核，2代表发布被admin驳回，3代表发布成功，4代表已有人接单，5代表已收货
 
 ```json
 {
@@ -461,8 +461,9 @@
     "status":true,
     "data":[
         {
+            "username":"",
             "id":"taskid",
-            "status":0/1/2,
+            "status":1/2,
             "title":"",
             "content":""
         }
@@ -607,6 +608,33 @@
         "startTime": 1584687421,
         "expiredTime": 1584687541
     }
+}
+```
+
+## /getBalance
+
+##### 获取账户余额
+
+```json
+{
+    "sessionkey":""
+}
+```
+
+#### 成功
+
+```json
+{
+    "balance":58.38,
+    "status":true
+}
+```
+
+#### 失败
+
+```
+{
+	"status":false
 }
 ```
 
