@@ -275,13 +275,12 @@
 }
 ```
 
-## /admin/getUserTask
+## /getUserTask
 
-##### 管理员获取指定用户的所有task
+##### 获取指定用户的所有task
 
 ```json
 {
-	"sessionkey":"",
     "selectuser":true,
     "username":"",
     "page":"",
@@ -289,7 +288,7 @@
 }
 ```
 
-##### 管理员获取所有用户的所有task
+##### 获取所有用户的所有task
 
 ```json'
 {
@@ -581,4 +580,33 @@
 ```
 
 ## 
+
+## /get_cos_credentials
+
+##### 获取腾讯云对象存储秘钥
+
+```json
+{
+    "sessionkey":""
+}
+```
+
+#### 成功
+
+```json
+{
+    "status":true,
+    "data":{
+    "credentials": {
+            "tmpSecretId": "AKIDV7Ht5GMyFZrUlHPu1SDXhRTQKqfDYqMz5NMkwDOEc_-4z6Lvuq3ippsMK2kEzzV3",
+            "tmpSecretKey": "vMt63Pq6bJMUMWcTN4sgB/K6C3o8cfAvgJ1Lwfztgek=",
+            "sessionToken": "y2QE4Z95PUl7SI3TwrKhKGY1laztb76ef0e74b0bd1a3dd6aed7d14c06458d3865x-_ao8k10UidUh40OXFfhFc0SymiEhL7juuKvgd0UHsLPyS9KcFpKFhi6t36_ypzBYttWNj166RIkz3_LsJPPS4mHyrS_YFWVAV3PFEEyr8rTI2qpPa-eHz0FgYLJFkHx-Sm4eYrUjmGBTmAEnj7AHWoIK71UK5Su12V9ZHiB9nxVOqVPZ4piq2rNC6Gtekw1tBmg-j-r6IfW9j_MMlG3gna3KeXkpWuCPij7DnS9I"
+        },
+        "requestId": "0ae29ed6-ad34-4759-9751-66d00e4fa066",
+        "expiration": "2020-03-20T06:59:01Z",
+        "startTime": 1584687421,
+        "expiredTime": 1584687541
+    }
+}
+```
 
