@@ -638,3 +638,20 @@
 }
 ```
 
+## /getUserInfo
+通过sessionKey拿到用户信息
+```
+{
+	sessionKey:'dsf341jkl432jlk1'
+}
+```
+
+### Response
+```
+{
+	status:true
+	message:null
+	phonenumber:''
+	admin:true
+}
+```
